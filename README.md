@@ -1,4 +1,4 @@
-# MSCode Olerver Lang Extension
+# MSCode Oliver Lang Extension
  A syntax highlight extension for the Oliver programming language.
 
 ### To Install
