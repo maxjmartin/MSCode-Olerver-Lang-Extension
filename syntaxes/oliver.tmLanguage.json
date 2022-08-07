@@ -1,0 +1,90 @@
+{
+	"name": "Oliver",
+	"patterns": [
+		{	"include": "#expression"			}
+	],
+	"repository": {
+
+		"expression": {
+			"patterns": [
+				{	"include": "#comment_block"			},
+				{	"include": "#comment_line"			},
+				{	"include": "#keywords"				},
+				{	"include": "#operators"				},
+				{	"include": "#numbers" 				}, 
+				{	"include": "#strings" 				}, 
+				{	"include": "#variables"				}, 
+				{	"include": "#paren-expression"		}
+			]
+		},
+
+		"comment_block": {
+			"name": "comment.block.oliver",
+			"begin": "##",
+			"end": "##",
+			"patterns": [
+				{  "name": "constant.character.escape.untitled",
+					"match": "(\\.|\n\r)*(##\n)"
+				}
+			]
+		},
+
+		"comment_line": {
+			"name": "comment.line.oliver",
+			"match": "#[^\n\r]+|#$"
+		},
+
+		"keywords": {
+			"name": "keyword.control.oliver",
+			"match": "@|_STACK_|QUEUE|clear|LET|let|EMIT|ENDL|LEAD|LAST|PLACE|DROP|ADD|SUB|MUL|DIV|MOD|FDIV|REM|POW|EQ|NE|GT|GE|LT|LE|_1ST_|_2ND_|_3RD_|_ROT_|_SWAP_"
+		},
+
+		"operators": {
+			"name": "operator.control.oliver",
+			"match": ",|-->|<--|>>>|<<<|=|-=|>|>=|<|<=|\\+|-|\\*|/|%|\\*\\*|//|%%"
+		},
+
+		"numbers": {
+			"name": "string.quoted.single.oliver",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{  "name": "constant.character.escape.untitled",
+					"match": "\\."
+				}
+			]
+		},
+
+		"strings": {
+			"name": "string.quoted.double.oliver",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{  "name": "constant.character.escape.untitled",
+					"match": "\\."
+				}
+			]
+		},
+
+		"variables": {
+			"name": "variable.oliver",
+			"match": "\\w"
+		},
+
+		"paren-expression": {
+			"begin": "\\(",
+			"end": "\\)",
+			"beginCaptures": {
+				"0": { "name": "punctuation.paren.open" }
+			},
+			"endCaptures": {
+				"0": { "name": "punctuation.paren.close" }
+			},
+			"name": "expression.group",
+			"patterns": [
+				{	"include": "#expression"	}
+			]
+		}
+	},
+	"scopeName": "source.oliver"
+}

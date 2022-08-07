@@ -1,0 +1,25 @@
+{
+    "name": "oliver-lang",
+    "displayName": "Oliver Lang",
+    "description": "Syntax highlighting for the Oliver language.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "oliver",
+            "aliases": ["Oliver", "oliver"],
+            "extensions": ["olly"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "oliver",
+            "scopeName": "source.oliver",
+            "path": "./syntaxes/oliver.tmLanguage.json"
+        }]
+    }
+}
