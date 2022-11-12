@@ -36,14 +36,14 @@
 
 		"keywords": {
 			"name": "keyword.control.oliver",
-			"match": "@|_STACK_|QUEUE|clear|LET|let|EMIT|ENDL|LEAD|LAST|PLACE|DROP|ADD|SUB|MUL|DIV|MOD|FDIV|REM|POW|EQ|NE|GT|GE|LT|LE|_1ST_|_2ND_|_3RD_|_ROT_|_SWAP_"
+			"match": "(?i)\\b(?:none|nothing|idnt|neg|deque|assign|let|def|endl|if|else|elif|lead|join|drop)\\b"
 		},
 
 		"operators": {
 			"name": "operator.control.oliver",
-			"match": ",|-->|<--|>>>|<<<|=|-=|>|>=|<|<=|\\+|-|\\*|/|%|\\*\\*|//|%%"
+			"match": "[-!$%^&*_+|~=`<>?,.\/]"
 		},
-
+		
 		"numbers": {
 			"name": "string.quoted.single.oliver",
 			"begin": "'",
