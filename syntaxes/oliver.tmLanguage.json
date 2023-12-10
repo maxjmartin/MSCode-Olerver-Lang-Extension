@@ -24,22 +24,6 @@
 			"match": "#![^\n\r]+"
 		},
 
-		"comment_block": {
-			"name": "comment.block.oliver",
-			"begin": "##",
-			"end": "##",
-			"patterns": [
-				{  "name": "constant.character.escape.untitled",
-					"match": "(\\.|\n\r)*(##\n)"
-				}
-			]
-		},
-
-		"comment_line": {
-			"name": "comment.line.oliver",
-			"match": "#[^\n\r]+|#$"
-		},
-
 		"keywords": {
 			"name": "keyword.control.oliver",
 			"match": "(?i)\\b(?:none|nothing|idnt|neg|deque|assign|let|def|endl|if|else|elif|lead|join|drop)\\b"
