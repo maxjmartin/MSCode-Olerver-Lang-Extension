@@ -17,11 +17,22 @@
 				{	"include": "#variables"				}, 
 				{	"include": "#paren-expression"		}
 			]
+		},		
+
+		"comment_line": {
+			"name": "comment.block.language.oliver",
+			"begin": "##",
+			"end": "##"
+		},		
+
+		"comment_block": {
+			"name": "comment.block.language.oliver",
+			"match": "# .*[\\n\\r]$"
 		},
 
 		"shebang_line": {
 			"name": "constant.language.oliver",
-			"match": "#![^\n\r]+"
+			"match": "#!.+[\\n\\r]$"
 		},
 
 		"keywords": {
