@@ -27,7 +27,7 @@
 
 		"comment_block": {
 			"name": "comment.block.language.oliver",
-			"match": "# .*[\\n\\r]$"
+			"match": "#.*[\\n\\r]$"
 		},
 
 		"shebang_line": {
